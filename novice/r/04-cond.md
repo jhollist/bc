@@ -227,6 +227,22 @@ plot_dist(dat[, 10], threshold = 10)  # day (column) 10</code></pre>
 <pre class='in'><code>plot_dist(dat[1:5, 10], threshold = 10)  # samples (rows) 1-5 on day (column) 10</code></pre>
 
 <img src="figure/04-cond-conditional-challenge2.png" title="plot of chunk conditional-challenge" alt="plot of chunk conditional-challenge" style="display: block; margin: auto;" />
+
+  + One of your collaborators prefers to see the distributions of the larger vectors as a histogram instead of as a boxplot.  Edit the function, `plot_dist`, to create a boxplot on vectors longer than the thresholds and a boolean parameter is set to `TRUE`, create a histogram on vectors longer than the threshold and a boolean parameter is set to `FALSE`, or otherwise create a stripchart.
+  To do this you'll use the R functions `boxplot` and `stripchart`.
+
+
+
+
+<pre class='in'><code>dat <- read.csv("inflammation-01.csv", header = FALSE)
+plot_dist(dat[, 10], threshold = 10, boxplot = TRUE)  # day (column) 10 - create boxplot
+plot_dist(dat[, 10], threshold = 10, boxplot = TRUE)  # day (column) 10 - create histogram</code></pre>
+
+<img src="figure/04-cond-conditional-challenge-hist1.png" title="plot of chunk conditional-challenge-hist" alt="plot of chunk conditional-challenge-hist" style="display: block; margin: auto;" />
+
+<pre class='in'><code>plot_dist(dat[1:5, 10], threshold = 10)  # samples (rows) 1-5 on day (column) 10</code></pre>
+
+<img src="figure/04-cond-conditional-challenge-hist2.png" title="plot of chunk conditional-challenge-hist" alt="plot of chunk conditional-challenge-hist" style="display: block; margin: auto;" />
 </div>
 
 ### Saving automatically generated figures

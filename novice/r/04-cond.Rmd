@@ -209,7 +209,7 @@ plot_dist <- function(x, threshold, boxplot = TRUE) {
 }
 ```
 
-```{r conditional-challenge}
+```{r conditional-challenge-hist}
 dat <- read.csv("inflammation-01.csv", header = FALSE)
 plot_dist(dat[, 10], threshold = 10, boxplot = TRUE)  # day (column) 10 - create boxplot
 plot_dist(dat[, 10], threshold = 10, boxplot = TRUE)  # day (column) 10 - create histogram
